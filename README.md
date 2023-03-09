@@ -1,12 +1,12 @@
-# ConverTool
+# ConverTool 🥳
 ---
-This is a very light-weight simple handy app/tool built with python using the pyqt5 module
+📢 This is a very light-weight simple handy app/tool built with python using the pyqt5 module
 
 Currently built for Debian based linux distributions at the moment but support for other platforms will be made available
 
-### Conversions
+### Conversions 🤯
 ---
-Currently can convert between various units under different categories such as:
+Currently can convert between various units under different categories such as: 👇🏼
 
 - Distance
   - Feet
@@ -49,5 +49,5 @@ Currently can convert between various units under different categories such as:
   - Farenheit
   - Kelvin
 
-More may be coming!
+Expect more to come!🫵🏾
 
