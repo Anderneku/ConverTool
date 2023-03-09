@@ -51,8 +51,3 @@ Currently can convert between various units under different categories such as:
 
 More may be coming!
 
-### Screenshots
----
-![image](https://user-images.githubusercontent.com/68037779/224149023-fdd8038f-bb5a-4926-ae8d-a15e53bd4f64.png)
-
-![image](https://user-images.githubusercontent.com/68037779/224149242-5e73b516-1f77-4afc-b99b-f52a47fedbf9.png)
