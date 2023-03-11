@@ -76,7 +76,6 @@ class Ui_MainWindow(object):
         font.setBold(False)
         font.setWeight(50)
         self.firstInput.setFont(font)
-        self.status.setFont(font)
         self.firstInput.setObjectName("firstInput")
         self.firstInput.textChanged.connect(self.firstValue)
         self.secondInput = QtWidgets.QLineEdit(self.centralwidget)
