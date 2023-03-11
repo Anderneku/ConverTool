@@ -14,14 +14,29 @@ from number_formatter import num_format
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(600, 600)
+<<<<<<< HEAD
+=======
+        MainWindow.resize(650, 600)
+>>>>>>> diffStyle
         MainWindow.setLayoutDirection(QtCore.Qt.LeftToRight)
         MainWindow.setIconSize(QtCore.QSize(32, 32))
         MainWindow.setDocumentMode(False)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.mainSelector = QtWidgets.QComboBox(self.centralwidget)
+<<<<<<< HEAD
         self.mainSelector.setGeometry(QtCore.QRect(70, 30, 361, 71))
+=======
+        self.mainSelector.setGeometry(QtCore.QRect(70, 30, 350, 71))
+
+        self.status = QtWidgets.QLineEdit(self.centralwidget)
+        self.status.setGeometry(QtCore.QRect(440, 30, 190, 71))
+        self.status.setText("Good")
+        self.status.setStyleSheet("color:lightgreen; font-family:'Fira Code'; font-weight:bold; font-size:20pt;")
+        self.status.setAlignment(QtCore.Qt.AlignCenter)
+        self.status.setReadOnly(True)
+
+>>>>>>> diffStyle
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(True)
@@ -38,11 +53,19 @@ class Ui_MainWindow(object):
         self.mainSelector.addItem("")
         self.mainSelector.currentIndexChanged.connect(self.mainClick)
         self.firstOption = QtWidgets.QComboBox(self.centralwidget)
+<<<<<<< HEAD
         self.firstOption.setGeometry(QtCore.QRect(440, 290, 150, 61))
         self.firstOption.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.firstOption.setObjectName("firstOption")
         self.secondOption = QtWidgets.QComboBox(self.centralwidget)
         self.secondOption.setGeometry(QtCore.QRect(440, 390, 150, 61))
+=======
+        self.firstOption.setGeometry(QtCore.QRect(440, 290, 190, 61))
+        self.firstOption.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.firstOption.setObjectName("firstOption")
+        self.secondOption = QtWidgets.QComboBox(self.centralwidget)
+        self.secondOption.setGeometry(QtCore.QRect(440, 390, 190, 61))
+>>>>>>> diffStyle
         self.secondOption.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.secondOption.setObjectName("secondOption")
         self.firstInput = QtWidgets.QLineEdit(self.centralwidget)
@@ -155,29 +178,55 @@ class Ui_MainWindow(object):
         elif index == 2:
             self.firstOption.clear()
             self.secondOption.clear()
-            self.firstOption.addItem("Centimeter (cm²)")
-            self.secondOption.addItem("Centimeter (cm²)")
-            self.firstOption.addItem("Meter (m²)")
-            self.secondOption.addItem("Meter (m²)")
+<<<<<<< HEAD
+            self.firstOption.addItem("Square Centimeter (cm²)")
+            self.secondOption.addItem("Square Centimeter (cm²)")
+            self.firstOption.addItem("Square Meter (m²)")
+            self.secondOption.addItem("Square Meter (m²)")
             self.firstOption.addItem("Square Inch (in²)")
             self.secondOption.addItem("Square Inch (in²)")
-            self.firstOption.addItem("Millimeter (mm²)")
-            self.secondOption.addItem("Millimeter (mm²)")
-            self.firstOption.addItem("Decimeter (dm²)")
-            self.secondOption.addItem("Decimeter (dm²)")
+            self.firstOption.addItem("Square Millimeter (mm²)")
+            self.secondOption.addItem("Square Millimeter (mm²)")
+            self.firstOption.addItem("Square Decimeter (dm²)")
+            self.secondOption.addItem("Square Decimeter (dm²)")
         elif index == 3:
             self.firstOption.clear()
             self.secondOption.clear()
-            self.firstOption.addItem("Centimeter (cm³)")
-            self.secondOption.addItem("Centimeter (cm³)")
-            self.firstOption.addItem("Meter (m³)")
-            self.secondOption.addItem("Meter (m³)")
-            self.firstOption.addItem("Inches (in)")
-            self.secondOption.addItem("Inches (in)")
-            self.firstOption.addItem("Millimeter (mm³)")
-            self.secondOption.addItem("Millimeter (mm³)")
-            self.firstOption.addItem("Decimeter (dm³)")
-            self.secondOption.addItem("Decimeter (dm³)")
+            self.firstOption.addItem("Cubic Centimeter (cm³)")
+            self.secondOption.addItem("Cubic Centimeter (cm³)")
+            self.firstOption.addItem("Cubic Meter (m³)")
+            self.secondOption.addItem("Cubic Meter (m³)")
+            self.firstOption.addItem("Cubic Inch (in)")
+            self.secondOption.addItem("Cubic Inch (in)")
+            self.firstOption.addItem("Cubic Millimeter (mm³)")
+            self.secondOption.addItem("Cubic Millimeter (mm³)")
+            self.firstOption.addItem("Cubic Decimeter (dm³)")
+            self.secondOption.addItem("Cubic Decimeter (dm³)")
+=======
+            self.firstOption.addItem("Square Centimeter (cm²)")
+            self.secondOption.addItem("Square Centimeter (cm²)")
+            self.firstOption.addItem("Square Meter (m²)")
+            self.secondOption.addItem("Square Meter (m²)")
+            self.firstOption.addItem("Square Inch (in²)")
+            self.secondOption.addItem("Square Inch (in²)")
+            self.firstOption.addItem("Square Millimeter (mm²)")
+            self.secondOption.addItem("Square Millimeter (mm²)")
+            self.firstOption.addItem("Square Decimeter (dm²)")
+            self.secondOption.addItem("Square Decimeter (dm²)")
+        elif index == 3:
+            self.firstOption.clear()
+            self.secondOption.clear()
+            self.firstOption.addItem("Cubic Centimeter (cm³)")
+            self.secondOption.addItem("Cubic Centimeter (cm³)")
+            self.firstOption.addItem("Cubic Meter (m³)")
+            self.secondOption.addItem("Cubic Meter (m³)")
+            self.firstOption.addItem("Cubic Inch (in)")
+            self.secondOption.addItem("Cubic Inch (in)")
+            self.firstOption.addItem("Cubic Millimeter (mm³)")
+            self.secondOption.addItem("Cubic Millimeter (mm³)")
+            self.firstOption.addItem("Cubic Decimeter (dm³)")
+            self.secondOption.addItem("Cubic Decimeter (dm³)")
+>>>>>>> diffStyle
         elif index == 4:
             self.firstOption.clear()
             self.secondOption.clear()
@@ -261,6 +310,7 @@ class Ui_MainWindow(object):
                 Pounds = [453.5924, 45359.24, 453592.4, 4535.924, 0.453592, 1],
                 )
         try:
+<<<<<<< HEAD
             if self.mainSelector.currentIndex() == 0:
                 match self.firstOption.currentIndex():
                     case 0:
@@ -271,10 +321,25 @@ class Ui_MainWindow(object):
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Kilometer"][self.secondOption.currentIndex()])))
                     case 3:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Miles"][self.secondOption.currentIndex()])))
+=======
+            self.status.setText("Good")
+            self.status.setStyleSheet("color:lightgreen; font-family:'Fira Code'; font-weight:bold; font-size:20pt;")
+            if self.mainSelector.currentIndex() == 0:
+                match self.firstOption.currentIndex():
+                    case 0:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Feet"][self.secondOption.currentIndex()])))
+                    case 1:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Yards"][self.secondOption.currentIndex()])))
+                    case 2:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Kilometer"][self.secondOption.currentIndex()])))
+                    case 3:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Miles"][self.secondOption.currentIndex()])))
+>>>>>>> diffStyle
             
             elif self.mainSelector.currentIndex() == 1:
                 match self.firstOption.currentIndex():
                     case 0:
+<<<<<<< HEAD
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Centimeter"][self.secondOption.currentIndex()])))
                     case 1:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Meter"][self.secondOption.currentIndex()])))
@@ -284,11 +349,23 @@ class Ui_MainWindow(object):
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Millimeter"][self.secondOption.currentIndex()])))
                     case 4:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Decimeter"][self.secondOption.currentIndex()])))
+=======
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Centimeter"][self.secondOption.currentIndex()])))
+                    case 1:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Meter"][self.secondOption.currentIndex()])))
+                    case 2:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Inches"][self.secondOption.currentIndex()])))
+                    case 3:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Millimeter"][self.secondOption.currentIndex()])))
+                    case 4:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Decimeter"][self.secondOption.currentIndex()])))
+>>>>>>> diffStyle
                         
                 
             elif self.mainSelector.currentIndex() == 2:
                 match self.firstOption.currentIndex():
                     case 0:
+<<<<<<< HEAD
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["sqCentimeter"][self.secondOption.currentIndex()])))
                     case 1:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["sqMeter"][self.secondOption.currentIndex()])))
@@ -298,10 +375,22 @@ class Ui_MainWindow(object):
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["sqMillimeter"][self.secondOption.currentIndex()])))
                     case 4:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["sqDecimeter"][self.secondOption.currentIndex()])))
+=======
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["sqCentimeter"][self.secondOption.currentIndex()])))
+                    case 1:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["sqMeter"][self.secondOption.currentIndex()])))
+                    case 2:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["sqInches"][self.secondOption.currentIndex()])))
+                    case 3:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["sqMillimeter"][self.secondOption.currentIndex()])))
+                    case 4:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["sqDecimeter"][self.secondOption.currentIndex()])))
+>>>>>>> diffStyle
 
             elif self.mainSelector.currentIndex() == 3:
                 match self.firstOption.currentIndex():
                     case 0:
+<<<<<<< HEAD
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["cbCentimeter"][self.secondOption.currentIndex()])))
                     case 1:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["cbMeter"][self.secondOption.currentIndex()])))
@@ -311,10 +400,22 @@ class Ui_MainWindow(object):
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["cbMillimeter"][self.secondOption.currentIndex()])))
                     case 4:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["sqDecimeter"][self.secondOption.currentIndex()])))
+=======
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["cbCentimeter"][self.secondOption.currentIndex()])))
+                    case 1:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["cbMeter"][self.secondOption.currentIndex()])))
+                    case 2:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["cbInches"][self.secondOption.currentIndex()])))
+                    case 3:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["cbMillimeter"][self.secondOption.currentIndex()])))
+                    case 4:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["sqDecimeter"][self.secondOption.currentIndex()])))
+>>>>>>> diffStyle
 
             elif self.mainSelector.currentIndex() == 4:
                 match self.firstOption.currentIndex():
                     case 0:
+<<<<<<< HEAD
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Microsecond"][self.secondOption.currentIndex()])))
                     case 1:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Millisecond"][self.secondOption.currentIndex()])))
@@ -324,10 +425,22 @@ class Ui_MainWindow(object):
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Minute"][self.secondOption.currentIndex()])))
                     case 4:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Hour"][self.secondOption.currentIndex()])))
+=======
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Microsecond"][self.secondOption.currentIndex()])))
+                    case 1:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Millisecond"][self.secondOption.currentIndex()])))
+                    case 2:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Second"][self.secondOption.currentIndex()])))
+                    case 3:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Minute"][self.secondOption.currentIndex()])))
+                    case 4:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Hour"][self.secondOption.currentIndex()])))
+>>>>>>> diffStyle
  
             elif self.mainSelector.currentIndex() == 5:
                 match self.firstOption.currentIndex():
                     case 0:
+<<<<<<< HEAD
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Gram"][self.secondOption.currentIndex()])))
                     case 1:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Centigram"][self.secondOption.currentIndex()])))
@@ -339,34 +452,70 @@ class Ui_MainWindow(object):
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Kilogram"][self.secondOption.currentIndex()])))
                     case 5:
                         self.secondInput.setText(str(int(self.firstInput.text()) * float(manager["Pounds"][self.secondOption.currentIndex()])))
+=======
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Gram"][self.secondOption.currentIndex()])))
+                    case 1:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Centigram"][self.secondOption.currentIndex()])))
+                    case 2:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Milligram"][self.secondOption.currentIndex()])))
+                    case 3:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Decigram"][self.secondOption.currentIndex()])))
+                    case 4:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Kilogram"][self.secondOption.currentIndex()])))
+                    case 5:
+                        self.secondInput.setText(str(float(self.firstInput.text()) * float(manager["Pounds"][self.secondOption.currentIndex()])))
+>>>>>>> diffStyle
 
             elif self.mainSelector.currentIndex() == 6:
                 match self.firstOption.currentIndex():
                     case 0:
                         if self.secondOption.currentIndex() == 1:
+<<<<<<< HEAD
                             self.secondInput.setText(str((int(self.firstInput.text()) * 9 / 5) + 32))
                         elif self.secondOption.currentIndex() == 2:
                             self.secondInput.setText(str(int(self.firstInput.text()) + 274.15))
+=======
+                            self.secondInput.setText(str((float(self.firstInput.text()) * 9 / 5) + 32))
+                        elif self.secondOption.currentIndex() == 2:
+                            self.secondInput.setText(str(float(self.firstInput.text()) + 274.15))
+>>>>>>> diffStyle
                         else:
                             self.secondInput.setText(str(self.firstInput.text()))
                     case 1:
                         if self.secondOption.currentIndex() == 0:
+<<<<<<< HEAD
                             self.secondInput.setText(str((int(self.firstInput.text()) - 32) / 1.8))
                         elif self.secondOption.currentIndex() == 2:
                             value = (int(self.firstInput.text()) - 32) / 1.8
+=======
+                            self.secondInput.setText(str((float(self.firstInput.text()) - 32) / 1.8))
+                        elif self.secondOption.currentIndex() == 2:
+                            value = (float(self.firstInput.text()) - 32) / 1.8
+>>>>>>> diffStyle
                             self.secondInput.setText(str(value + 273.15))
                         else:
                             self.secondInput.setText(str(self.firstInput.text()))
                     case 2:
                         if self.secondOption.currentIndex() == 0:
+<<<<<<< HEAD
                             self.secondInput.setText(str(int(self.firstInput.text()) - 273.15))
                         elif self.secondOption.currentIndex() == 1:
                             value = 1.8 * (int(self.firstInput.text()) - 273.15) + 32
+=======
+                            self.secondInput.setText(str(float(self.firstInput.text()) - 273.15))
+                        elif self.secondOption.currentIndex() == 1:
+                            value = 1.8 * (float(self.firstInput.text()) - 273.15) + 32
+>>>>>>> diffStyle
                             self.secondInput.setText(str(value))
                         else:
                             self.secondInput.setText(str(self.firstInput.text()))
         except:
+<<<<<<< HEAD
             pass
+=======
+            self.status.setText("Error")
+            self.status.setStyleSheet("color:#F32929; font-family:'Fira Code'; font-weight:bold; font-size:20pt;")
+>>>>>>> diffStyle
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
