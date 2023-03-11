@@ -270,6 +270,8 @@ class Ui_MainWindow(object):
                 Pounds = [453.5924, 45359.24, 453592.4, 4535.924, 0.453592, 1],
                 )
         try:
+            self.status.setText("Good")
+            self.status.setStyleSheet("color:lightgreen; font-family:'Fira Code'; font-weight:bold; font-size:20pt;")
             if self.mainSelector.currentIndex() == 0:
                 match self.firstOption.currentIndex():
                     case 0:
@@ -375,7 +377,8 @@ class Ui_MainWindow(object):
                         else:
                             self.secondInput.setText(str(self.firstInput.text()))
         except:
-            pass
+            self.status.setText("Error")
+            self.status.setStyleSheet("color:#F32929; font-family:'Fira Code'; font-weight:bold; font-size:20pt;")
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
