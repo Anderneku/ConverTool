@@ -49,5 +49,6 @@ Currently can convert between various units under different categories such as: 
   - Farenheit
   - Kelvin
 
-Expect more to come!🫵🏾
+Expect more to come!
+windows version coming soon!
 
